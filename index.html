@@ -9,7 +9,9 @@
 </head>
 <body>
     <header class="headerForm">
-        <h1>FaceBook</h1>
+        <div class="logoFacebook">
+             <h1>facebook</h1>
+        </div>
         <form class="form">
             <div class="formHeaderDiv">
                 <label for="emailMobile">Adresse mail ou Télephone</label>
@@ -22,71 +24,114 @@
             </div>
 
             <div  class="formHeaderDiv">
-               <button type="submit">Envoyer</button>
+               <button type="submit">Login</button>
             </div>
         </form>
     </header>
-<section class="FriendForm">
-    <section class="friendNews">
-        <h2>
-            Connect With friends and the World
-            around you on facebook.
-        </h2>
+        <section class="FriendForm">
+            <section class="friendNews">
+                <h2>
+                    Connect With friends and the World
+                    around you on facebook.
+                </h2>
 
-        <div class="userInfo">
-            <img src="" alt="">
-            <p><strong>See Photo and Updates</strong> from friends in news Feed</p>
-        </div>
-
-        <div class="userInfo">
-            <img src="" alt="">
-            <p><strong>Share What's new</strong>In your life on you time line</p>
-        </div>
-
-        <div class = 'userInfo'>
-            <img src="" alt="">
-            <p><strong>Find More</strong> Of What you are looking for with facebook search</p>
-        </div>
-    </section>
-
-    <section class="signUp">
-        <h1>Sign Up</h1>
-        <p>It's free and always be</p>
-        <form class="formLogin">
-            <input type="text" name="firstName" placeholder="First Name">
-            <input type="text" name="lastName" placeholder="Last Name">
-            <input type="text" name="emailNumber" placeholder="Mobile Number or Email">
-            <input type="password" name="newPassword" placeholder="New Password">
-            <div class="birthday">
-                <h5 for="birthday">Birthday</h5>
-                <input type="date"  id="birthday">
-                <img src="" alt="">
-            </div>
-
-            <div class="genre">
-                <div class="type">
-                    <label for="female">Femelle</label>
-                    <input type="radio" name="sexe" id="Femelle">
+                <div class="userInfo">
+                    <img width="50" src="assets/image_1.png" alt="image 1">
+                    <p><strong>See Photo and Updates</strong> from friends in news Feed</p>
                 </div>
 
-                <div class="type">
-                    <label for="male">Male</label>
-                    <input type="radio" name="sexe" id="Male">
+                <div class="userInfo">
+                    <img width="50" src="assets/image_2.png" alt="image 2">
+                    <p><strong>Share What's new</strong>In your life on you time line</p>
                 </div>
 
-                <div class="type">
-                    <label for="personnaliser">Personnalisé</label>
-                    <input type="radio" name="sexe" id="personnaliser">
+                <div class = 'userInfo'>
+                    <img width="50" src="assets/image_3.png" alt="image 3">
+                    <p><strong>Find More</strong> Of What you are looking for with facebook search</p>
                 </div>
-            </div>
-        </form>
-        <br>
-        <p>nxuhbbhfbèue _èrtgjh ebvkwdjv tn! kig iuJHV IOguHGoguge tra trakous ounlou ozn o kn dbufb uhndx
-            k edb dfcj dfc           gvbusdgbs ishmmmt!mR P9 prh
-        </p>
+            </section>
 
-        <button type="submit">Envoyer</button>
-    </section>
-</section>
+            <section class="signUp">
+                <h1>Sign Up</h1>
+                <p>It's free and always be</p>
+                <form class="formLogin">
+                    <input type="text" name="firstName" placeholder="First Name">
+                    <input type="text" name="lastName" placeholder="Last Name">
+                    <input type="text" name="emailNumber" placeholder="Mobile Number or Email">
+                    <input type="password" name="newPassword" placeholder="New Password">
+                    <div class="birthday">
+                        <h2 class="birthday">birthday</h2>
+                    <select name="day" id="day">
+                            <option value="lun">Lundi</option>
+                            <option value="mar">Mardi</option>
+                            <option value="mer">Mercredi</option>
+                            <option value="jeu">Jeudi</option>
+                            <option value="ven">Vendredi</option>
+                            <option value="sam">Samedi</option>
+                            <option value="dimanche">Dimanche</option>
+                    </select>
+                    <select name="month" id="month">
+                            <option value="ja">Janvier</option>
+                            <option value="fe">Fevrier</option>
+                            <option value="ma">Mars</option>
+                            <option value="av">Avril</option>
+                            <option value="ma">Mai</option>
+                            <option value="ju">Juin</option>
+                            <option value="ju">Juillet</option>
+                            <option value="ao">Aout</option>
+                            <option value="se">Septembre</option>
+                            <option value="oc">Octobre</option>
+                            <option value="nov">Novembre</option>
+                            <option value="dec">Decembre</option>
+                    </select>
+
+                    <select name="year" id="year">
+                        <option value="90">1990</option>
+                        <option value="91">1991</option>
+                        <option value="92">1992</option>
+                        <option value="93">1993</option>
+                        <option value="94">1994</option>
+                        <option value="95">1995</option>
+                        <option value="96">1996</option>
+                        <option value="97">1997</option>
+                        <option value="98">1998</option>
+                        <option value="99">1999</option>
+                        <option value="00">2000</option>
+                        <option value="01">2001</option>
+                        <option value="02">2002</option>
+                    </select>
+                    </div>
+                    <div>
+                        <h3 class="birthday">Genre</h3>
+                        <div class="genre">
+                            <div class="type">
+                                <label for="female">Femelle</label>
+                                <input type="radio" name="sexe" id="Femelle">
+                            </div>
+
+                            <div class="type">
+                                <label for="male">Male</label>
+                                <input type="radio" name="sexe" id="Male">
+                            </div>
+
+                            <div class="type">
+                                <label for="personnaliser">Personnalisé</label>
+                                <input type="radio" name="sexe" id="personnaliser">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <br>
+                <p class="info">By pressing Register, you accept our General Conditions ,
+                    our Data Use Policy and our Cookie Use Policy . 
+                    You may receive text notifications from us and you can 
+                    unsubscribe at any time
+                </p>
+
+                <button class="submit" type="submit">Sign Up</button>
+
+                <h4 style="margin-top: 30px; font-weight: bold; color: olive;">Create a Page for a celebrity, a group or a company.</h4>
+            </section>
+        </section>
 </body>
 </html>

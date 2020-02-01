@@ -1,32 +1,35 @@
 *{
     margin: 0;
+    padding: 0;
 }
 .headerForm{
-    flex-wrap: wrap;
+    position: relative;
     display: flex;
+    flex-wrap: wrap;
     background: #385898;
     color: white;
     height: 100px;
 }
 
-.headerForm h1{
+.logoFacebook{
+    margin-left: 100px;
+    width: 40%;
     margin-top: 30px;
-    padding-left: 150px;
-    position: fixed;
 
 }
 
 .form{
-    padding-right: 200px;
     position: absolute;
+    width: 40%;
+    margin-right: 9%;
     top: 0;
     right: 0;
-    margin-top: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    margin-top:30px;
+    display: inline-flex
+
 }
 .form input{
+    margin-left: 10px;
     width: 200px;
     height: 20px;
 }
@@ -34,19 +37,24 @@
 .formHeaderDiv{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
 }
+.formHeaderDiv label{
+    margin-left: 10px;
 
+}
 .formHeaderDiv button{
     margin-top: 20px;
     width: 100px;
+    height: 23px;
     background: #385898;
     color: white;
 }
 .formHeaderDiv p{
+    margin-left: 10px;
     font-size: 0.8em;
     font-style: oblique;
 }
+
 
 
 body{
@@ -67,7 +75,13 @@ body{
     height: 40%;
 }
 
+.userInfo{
+    margin-top: 40px;
+    display: flex;
+}
+
 .userInfo p{
+    margin-top: 15px;
     font-size: 1.0em;
 }
 
@@ -91,23 +105,30 @@ body{
     height: 30px;
 }
 .formLogin input:nth-child(1){
-    width: 40%;
+    width: 44%;
+    font-size: 1.2em;
 }
 
 .formLogin input:nth-child(2){
-    width: 40%;
+    width: 44%;
+    font-size: 1.2em;
 }
 
 .formLogin input:nth-child(3){
-    width: 80%;
+    width: 90%;
+    font-size: 1.2em;
 }
 
 .formLogin input:nth-child(4){
-    width: 80%;
+    width: 90%;
+    font-size: 1.2em;
+}
+
+select{
+    margin-top: 15px;
 }
 
 .genre{
-    margin-top: 20px;
     display: flex;
 }
 .type input{
@@ -116,6 +137,226 @@ body{
 }
 
 .type label{
+    margin-right: 5px;
     font-size: small;
-    margin-top: 50px;
+    margin-top: 11px;
+}
+
+.type{
+    display: flex;
+}
+
+
+.submit{
+    background: linear-gradient(#67ae55, #578843);
+    border-color: teal;
+    box-shadow: 1px 1px 3px inset ;
+    color: white;
+    border-radius: 8px;
+    width: 150px;
+    height: 30px;
+    margin-left:10%;
+    margin-top: 20px;
+}
+.birthday{
+    margin-top: 10px;
+    color: darkgray;
+}
+
+.info{
+    font-family: sans-serif;
+    font-size: 0.9em;
+    font-style: oblique;
+    color: rgb(88, 86, 86);
+}
+
+@media all and (max-width:1080px)
+{
+    .logoFacebook{
+        width: 30%;
+        margin-top: 30px;
+    
+    }
+
+    .headerForm{
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        background: #385898;
+        color: white;
+        height: 100px;
+    }
+
+    .formHeaderDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .formHeaderDiv label{
+        margin-left: 10px;
+    
+    }
+    .formHeaderDiv button{
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 100px;
+        height: 23px;
+        background: #385898;
+        color: white;
+    }
+    .formHeaderDiv p{
+        margin-left: 10px;
+        font-size: 0.8em;
+        font-style: oblique;
+    }
+
+    .form{
+        position: absolute;
+        width: 60%;
+        margin-right: 9%;
+        top: 0;
+        right: 0;
+        margin-top:30px;
+        display: inline-flex
+    
+    }
+}
+
+@media all and (max-width:780px){
+
+    .logoFacebook{
+        margin-left: 100px;
+        width: 40%;
+        margin-top: 5px;
+    
+    }
+
+    .headerForm{
+        display: flex;
+        flex-direction: column;
+        background: #385898;
+        color: white;
+        height: 250px;
+    }
+
+    .formHeaderDiv{
+        display: flex;
+        flex-direction: column;
+    }
+    .formHeaderDiv label{
+        margin-left: 10px;
+    
+    }
+    .formHeaderDiv button{
+        margin-left: 10px;
+        margin-top: 20px;
+        width: 100px;
+        height: 23px;
+        background: #385898;
+        color: white;
+    }
+    .formHeaderDiv p{
+        margin-left: 10px;
+        font-size: 0.8em;
+        font-style: oblique;
+    }
+
+    .form{
+        position: absolute;
+        width: 90%;
+        top: 0;
+        right: 0;
+        margin-top:40px;
+        display: inline-flex
+    
+    }
+
+    .form input{
+        margin-left: 10px;
+        width: 150px;
+        height: 20px;
+    }
+
+    .headerForm{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        background: #385898;
+        color: white;
+        height: 100px;
+    }
+
+    .FriendForm{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .friendNews{
+        padding: 0;
+        margin-top: 100px;
+        width: auto;
+        height: 40%;
+    }
+
+    .signUp{
+        padding: 0;
+        margin-top: 20px;
+        width: auto;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media all and (max-width:435px){
+
+    *{
+        padding: 0;
+    }
+
+    .form{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 90%;
+        top: 0;
+        left: 50px;
+        margin-top:50px;
+    
+    }
+    .headerForm{
+        padding: 0;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        background: #385898;
+        color: white;
+        height: 250px;
+    }
+
+    .formHeaderDiv{
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+    }
+    .formHeaderDiv label{
+        padding: 0;
+        margin-left: 10px;
+    
+    }
+    .formHeaderDiv button{
+        position: relative;
+        left: 10%;
+        padding: 0;
+        margin-top: 20px;
+        width: 100px;
+        height: 23px;
+        background: #385898;
+        color: white;
+    }
+    .formHeaderDiv p{
+        padding: 0;
+        margin-left: 10px;
+        font-size: 0.8em;
+        font-style: oblique;
+    }
 }
